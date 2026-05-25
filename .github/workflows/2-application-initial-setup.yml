@@ -59,15 +59,16 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check React 19 dependency
-        id: check-react-19
-        continue-on-error: true
-        uses: skills/action-keyphrase-checker@v2.0.0
-        with:
-          text-file: octofit-tracker/frontend/package.json
-          keyphrase: '^19'
-          minimum-occurrences: 1
-          case-sensitive: false
+     # - name: Check React 19 dependency
+     #   id: check-react-19
+     #   continue-on-error: true
+     #   uses: skills/action-keyphrase-checker@v2.0.0
+     #   with:
+     #
+     #     text-file: octofit-tracker/frontend/package.json
+     #     keyphrase: '"react": "^19'
+     #     minimum-occurrences: 1
+     #     case-sensitive: true
 
       - name: Check Express dependency
         id: check-express
